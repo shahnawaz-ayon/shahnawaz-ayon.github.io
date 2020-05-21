@@ -38,7 +38,7 @@ body {
   display: block;
   height: 100%;
   width: 100%;
-  line-height: 65px;
+  line-height: 40px;
   font-size: 20px;
   color: white;
   padding-left: 40px;
@@ -52,6 +52,7 @@ ul li:hover a{
 }
 .sidebar ul a i{
   margin-right: 16px;
+  position:fixed;
 }
 #check{
   display: none;
@@ -104,6 +105,7 @@ section{
 .container {
 left:100px;
 top:100px;
+display:grid;
   position: absolute;
   width: 200px;
   height:200px;
@@ -111,9 +113,9 @@ top:100px;
 }
 .item
 {
-top:10px;
+top:0px;
 left:500px;
-width: 540px;
+width: 460px;
 background-color: silver;
 height: 350px;
 position:absolute;
@@ -126,7 +128,7 @@ padding: 5px;
 {
 top:10px;
 left:10px;
-width: 520px;
+width: 450px;
 color:black;
 background-color: #DAF7A6;
 height: 100px;
@@ -141,7 +143,7 @@ position: absolute;
 {
 top:110px;
 left:-1px;
-width: 520px;
+width: 450px;
 color:black;
 background-color: #DAF7A6;
 height: 100px;
@@ -156,7 +158,7 @@ position: absolute;
 {
 top:110px;
 left:-1px;
-width: 520px;
+width: 450px;
 color:black;
 background-color: #DAF7A6;
 height: 100px;
@@ -174,20 +176,7 @@ left: 280px;
 position: absolute;
 
 }
-.copy
-{
-top:400px;
-width: 1100px;
-left:-100px;
-background-color: #AED6F1;
-height: 80px;
-position:absolute;
-border:2px solid #76D7C4;
-text-align:center;
-font-size:25px;
-padding: 5px;
 
-}
 .set
 {
 top:0;
@@ -222,7 +211,20 @@ padding: 2px;
   text-align: center;
    
 }
+.copy
+{
+top:400px;
+width: 1100px;
+left:-700px;
+background-color: #AED6F1;
+height: 80px;
+position:relative;
+border:2px solid #76D7C4;
+text-align:center;
+font-size:25px;
+padding: 5px;
 
+}
 .container:hover .image {
   opacity: 0.3;
 }
@@ -243,20 +245,56 @@ position:absolute;
 }
 .anim
 {
-top:10px;
-left:900px;
-width: 1000px;
+top:0px;
+right:100px;
+width: 100px;
 height: 100px;
 position:absolute;
 }
 .yy
 {
-top:0;
-left:0;
+top:100px;
+left:-600px;
 width: 100px;
 height: 100px;
-position:absolute;
+position:relative; 
+	animation-name: chayon;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-fill-mode:backwards;
 }
+		
+@keyframes chayon {
+		0% {
+			background-color:navy;
+			left:-500px;
+			top:-100px;
+			}
+			
+		25%{
+			background-color: green;
+			left: 300px;
+			top:-100px;
+		}
+		
+		50% {
+			background-color: yellow;
+			left: 300px;
+			top: 400px;
+		}
+		75% {
+			background-color: lime;
+			
+			left: -500px;
+			top:400px;
+		}
+		100% {
+			background-color: navy;
+			left: -500px;
+			top:-100px;
+		}
+		}
+			
 </style>
 </head>
 <body>
@@ -279,8 +317,6 @@ position:absolute;
 <li><a href="https://shahnawaz-ayon.github.io/portfolio"><i class="fas fa-stream"></i>Code-Learning</a></li>
 <li><a href="https://www.facebook.com/smartnurserybd/"><i class="fas fa-calendar-week"></i>Green Spark</a></li>
 <li><a href="#"><i class="far fa-question-circle"></i>About</a></li>
-<li><a href="#"><i class="fas fa-sliders-h"></i>Services</a></li>
-<li><a href="#"><i class="far fa-envelope"></i>Contact</a></li>
 </ul>
 </div>
 <section></section>
@@ -289,9 +325,10 @@ position:absolute;
 <h1 class="animated infinite fadeIn delay-2s">Welcome</h1>
 </div>
 <div class="Name">
-<h2>Shahnawaz Ayon</h2>
 <p>Web Developer</p>
-<h3>If you like our work please contact us.</h3>
+<h2>Shahnawaz Ayon</h2>
+
+
 </div>
 <div class="container">
   <img src="clip2.png" alt="Avatar" class="image" style="width:100%">
@@ -299,11 +336,6 @@ position:absolute;
     <div class="text">Chief Educoder</div>
 </div>
 <div>
-<div class="copy">
-<p> © Shahnawaz Ayon</p>
-<p3>Educoders Lab of Innovation</p3>
-
-</div>
 
 <div>
 <div class="item">
@@ -311,8 +343,7 @@ position:absolute;
 
 <div class="item1">
 <i class="fas fa-clock"></i><li>Our products</li>
-<p>We make Educational Web Applications</p>
-<p> using HTML, CSS, Javascript, Python</p>
+<p>We make Digital Educational Contents</p>
 <p>We are advocates of SDG 11</p>
 
 <div class="item2">
@@ -331,8 +362,13 @@ position:absolute;
 </div>
   </div>
   <div class="yy">
-  <img src="9a.gif" alt="" style="width:100%">
+  <img src="r.gif" alt="" style="width:100%">
 </div>
-  
+  <div class="copy">
+<p> © Shahnawaz Ayon</p>
+<p3>Educoders Lab of Innovation</p3>
+
+</div>
+</div>
 </body>
 </html>
