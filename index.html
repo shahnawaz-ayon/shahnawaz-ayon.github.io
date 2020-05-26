@@ -21,14 +21,16 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 .sidebar {
+top:0px;
   position: fixed;
   left: -250px;
   width: 250px;
-  height: 100%;
+  height: 360px;
   background: #042331;
   transition: all .5s ease;
 }
 .sidebar header {
+
   font-size: 22px;
   color: white;
   line-height: 70px;
@@ -97,14 +99,29 @@ label #cancel{
 #check:checked ~ section{
   margin-left: 250px;
 }
-section{
-  background: url(bg.jpeg) no-repeat;
+.section{
+  background:none;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 500px;
+  width:300px;
   transition: all .5s;
+  top:-200px;
+  padding: 25px 50px 75px 100px;
+  position:relative;
+  
 }
-
+.sec1{
+  background: url(logo.png) no-repeat;
+  background-size: 100px 200px;;
+  height: 300px;
+  width:200px;
+  max-width:50%;
+  max-height:50%;
+  right:-850px;
+  top:100px;
+  position:relative;
+  }
 .container {
 left:100px;
 top:100px;
@@ -116,8 +133,8 @@ display:grid;
 }
 .item
 {
-top:0px;
-left:450px;
+top:100px;
+left:500px;
 width: 460px;
 background-color: #AED6F1;
 height: 390px;
@@ -174,8 +191,8 @@ position: absolute;
 }
 .Name
 {
-top: 330px;
-left: 300px;
+top: 250px;
+left: 180px;
 width:200px;
 padding:5px;
 height:150px;
@@ -186,7 +203,8 @@ border:2px solid #76D7C4
 
 .set
 {
-top:0;
+top:-100px;
+left:-100px;
 width:100vw;
 background-color: #2B547E;; 
 height: 80px;
@@ -204,7 +222,7 @@ padding: 2px;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
-  left: 200px;
+  left: 180px;
   position:absolute;
 }
 
@@ -213,9 +231,9 @@ padding: 2px;
   opacity: 0;
   position: absolute;
   top: -10px;
-  left: 40px;
-  width:10px;
-  animation:transform: translate(-50%, -50%);
+  left: 80px;
+ 
+  
   text-align: center;
    
 }
@@ -245,7 +263,7 @@ position:absolute;
 .text {
   background-color: #AED6F1;
   color: black;
-  right:-340px;
+  left:110px;
   top:180px;
   height:55px;
   width:180px;
@@ -309,6 +327,7 @@ position:absolute;
 }	
 .card-body1
 {
+position:relative;
 border:2px solid #76D7C4;
 background-color:#2B547E;
 text-align:center;
@@ -319,16 +338,15 @@ color:white;
 height:200px;
 width:250px;
 }
-.row row-cols-1 row-cols-md-2
+.container1
 {
-top:500px;
-left:100px;
+bottom:-550px;
+left:50px;
 height:20px;
 width:100%;
 position:relative;
 } 
-
-
+ 
 @keyframes an1 {
 		0% {
 			
@@ -344,12 +362,12 @@ position:relative;
 		
 		50% {
 			
-			left: 50px;
+			left: -300px;
 			top:270px;
 		}
 		75% {
 					
-			left: 50px;
+			left: -300px;
 			top:-100px;
 		}
 		100% {
@@ -362,10 +380,12 @@ position:relative;
 </style>
 </head>
 <body>
- 
+ <div class="container">
 <div class="set">
 <h1>Educoders Lab of Innovation</h1>
 </div>
+
+
 <div>
 <div>
 <input type="checkbox" id="check">
@@ -385,20 +405,29 @@ position:relative;
 </div>
 <section></section>
 </div>
-</div>
+
+
+
 <div class="anim">
 <h1 class="animated infinite fadeIn delay-2s">Welcome</h1>
 </div>
 </div>
+<div>
+<div class="sec1">
+  </div>
+  </div>
+   
+	  
+
 <div class="Name">
 <p>Front End Web Developer</p>
 Shahnawaz Ayon<br/>
 Former Operations Officer <br/>
 Nordicsoft Limited
 </div>
-</div>
 
-<div class="container">
+
+
   <img src="clip2.png" alt="Avatar" class="image" style="width:100%">
   
   <div class="middle">
@@ -406,7 +435,8 @@ Nordicsoft Limited
     <div class="text">Chief Educoder
 </div>
 </div>
-
+</div>
+<div>
 <div>
 <div class="item">
 
@@ -432,7 +462,7 @@ E-mail: shahnawaz.ayon@teachforbangladesh.org
 </div>
   </div>
   </div>
-  </div>
+  
   
   <hr>
   <div class="yy">
@@ -443,8 +473,10 @@ E-mail: shahnawaz.ayon@teachforbangladesh.org
 
 </div>
 </div>
-</div>
 
+  
+
+<div class="container1">
 <!-- Just an image -->
 <nav class="navbar navbar-light bg-light">
   <a class="navbar-brand" href="#">
@@ -494,12 +526,8 @@ E-mail: shahnawaz.ayon@teachforbangladesh.org
   <div class="card-body1">
     <h5 class="card-title">© Shahnawaz Ayon</h5>
     <p class="card-text">Educoders Lab of Innovation</p>
- 
-  </div>
-  </div>
-  </div>
-  </div>
-</div>
-</div>  
+	</div>
+	</div>
+	</div>
 </body>
 </html>
