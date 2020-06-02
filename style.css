@@ -129,29 +129,29 @@ position:relative;
 		0% {
 			
 			left:0px;
-			top:100px;
+			top:0px;
 			}
 			
 		25%{
 			
-			left: 0px;
-			top:270px;
+			left:150px;
+			top:0px;
 		}
 		
 		50% {
 			
 			left: 300px;
-			top:270px;
+			top:0px;
 		}
 		75% {
 					
-			left: 300px;
-			top:100px;
+			left: 150px;
+			top:0px;
 		}
 		100% {
 			
 			left: 0px;
-			top:100px;
+			top:0px;
 		}
 		}
 			
