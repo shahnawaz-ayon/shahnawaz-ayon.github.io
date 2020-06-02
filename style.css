@@ -209,7 +209,7 @@ padding: 2px;
   opacity: 1;
   display: block;
   width: 30px;
-  height: auto;
+  height: 30px;
   transition: .5s ease;
   backface-visibility: hidden;
   left: 180px;
