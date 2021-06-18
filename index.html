@@ -11,8 +11,8 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="style.css">
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 	
@@ -159,10 +159,10 @@
 </div>
 	
 <center>
-	<div id="pph-hireme"></div>
+	<div id="pph-hireme" data-aos="flip-left"></div>
 </center>
 	
-  <div class="card-body1">
+  <div class="card-body1 data-aos="fade-up-right">
     <h5 class="card-title">© Shahnawaz Ayon</h5>
     <p class="card-text">Educoders Lab of Innovation</p>
 	</div>
@@ -306,7 +306,15 @@ for (i = 0; i < acc.length; i++) {
     try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
 }(document, 'script'));
 </script>
+<script>
+  AOS.init({
+    offset:120,
+    duration: 1000,
+    once: false,
 
+  });
+
+</script>
 
 </body>
 <div class="card text-white bg-info mb-3">
