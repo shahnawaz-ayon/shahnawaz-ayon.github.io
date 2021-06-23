@@ -12,14 +12,15 @@ var passWord="1234";
     if (username=userName && password == passWord){
         
     
-    alert(userName+" is logged in")
-    window.location = "http://www.google.com";
+    alert("Hello "+ userName+" Administrative login successful")
+    window.location = "https://www.linkedin.com/in/shahnawaz-ayon-b3bb7816/";
     return
     
         }
         else
         {
-            alert("incorrect password")
+     alert("incorrect password")
+     window.location = "Loginfailed.html";
           }
         
     
