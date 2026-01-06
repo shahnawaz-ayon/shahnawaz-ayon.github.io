@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
 
@@ -25,7 +26,7 @@
 <div class="alert alert-primary" id="react" role="alert">
 
     <center>
-      <h5>LET'S MAKE OUR CITIES SUSTAINABLE</h5>
+      <h5>Welcome to IDE CodeZen</h5>
       </center>
     </div>
   </div>
@@ -94,67 +95,89 @@
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <div class="elfsight-app-3d1d4466-eeb9-4543-b923-3d91a7305bf1"></div>
 
-<div class="alert alert-success" data-aos="flip-up" role="alert">
-<h3>We create Digital Contents for your business</h3>
-<p>If you're looking for top-notch digital content creation, look no further 
-	than my portfolio! With expertise in graphics design and animation, 
-	I offer a wide range of high-quality services to help you bring your vision to life. 
-	From eye-catching logos and stunning illustrations to dynamic video content and captivating animations,
-	my portfolio showcases a variety of projects that demonstrate my skill and creativity. 
-	Whether you're an individual or a business, I can help you stand out in a crowded digital landscape
-	with my unique and effective approach to digital content creation. So why wait? Contact me today 
-	to learn more and see how I can help you achieve your goals!</p>
-<p>Checkout my Fiverr Profile for more info  https://www.fiverr.com/shahnawazayon63</p>
-</div>
 
-<div class="alert alert-success" data-aos="flip-up" role="alert">
-<h3>How to make Dhaka a sustainable city</h3>
-<p>Dhaka, the capital city of Bangladesh, is one of the most densely populated cities in the world, with a population of over 21 million people. The rapid growth of the city has led to numerous challenges, including traffic congestion, air pollution, inadequate waste management, and a lack of green spaces. However, the citizens of Dhaka have the potential to transform their city into a sustainable metropolis by adopting a variety of measures.
+// Descriptive responsive containers starts
 
-One of the most significant steps that citizens of Dhaka can take towards sustainability is to reduce their reliance on private cars and promote the use of public transportation, bicycles, and walking. The city's public transportation system needs improvement, but initiatives like the introduction of electric buses and the expansion of the metro rail network can be game-changers. Additionally, encouraging carpooling and ride-sharing can help reduce traffic congestion and air pollution.
+import React from 'react';
 
-Another critical area for the citizens of Dhaka to focus on is waste management. <br>
-	
-The city generates a significant amount of waste, but the existing infrastructure is insufficient to manage it effectively. 
-	Citizens can take steps to reduce waste by practicing recycling and composting and by reducing the use of single-use plastics. 
-	The government can also incentivize waste reduction by providing tax benefits for companies that implement sustainable waste management practices.<br>
+const ThreeContainersLayout: React.FC = () => {
+  return (
+    <div className="min-h-screen bg-gray-50 p-4 sm:p-6 lg:p-8 font-sans">
+      
+      {/* Main Wrapper to center content */}
+      <div className="max-w-7xl mx-auto">
+        
+        {/* 1. HEADER CONTAINER */}
+        <header className="mb-10 text-center sm:text-left">
+          <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight">
+            Dashboard Overview
+          </h1>
+          <p className="mt-2 text-lg text-gray-500">
+            Manage your workflow from these three modules.
+          </p>
+        </header>
 
-Dhaka's citizens can also work towards creating green spaces in the city. Parks and open spaces provide a respite from the concrete jungle and help improve
-	air quality. Urban farming initiatives, such as community gardens and rooftop gardens, can also help promote a sustainable food system and provide
-	fresh produce.<br>
+        {/* 2. BODY GRID (The 3 Containers) */}
+        {/* 
+           grid-cols-1       : 1 column on Mobile (stacked)
+           md:grid-cols-3   : 3 columns on Medium screens and up (side-by-side)
+           gap-6             : Space between the cards
+        */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-Water management is another area where citizens can play a crucial role. Dhaka is prone to flooding, and the city's water supply is often contaminated. 
-	Citizens can take steps to conserve water by adopting water-efficient practices, such as installing low-flow showerheads and toilets. 
-	Rainwater harvesting and wastewater treatment can also help alleviate the water crisis in the city.<br>
+          {/* --- CONTAINER 1 --- */}
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+              <span className="text-2xl">📊</span>
+            </div>
+            <h2 className="text-xl font-bold text-gray-800 mb-2">Analytics</h2>
+            <p className="text-gray-500 text-sm leading-relaxed">
+              View your daily progress charts and performance metrics in real-time.
+            </p>
+            <button className="mt-4 text-blue-600 font-semibold text-sm hover:text-blue-800">
+              View Report &rarr;
+            </button>
+          </div>
 
-Finally, citizens of Dhaka can promote sustainable development by supporting businesses that prioritize sustainability. 
-	By choosing to purchase products from companies that prioritize sustainability, citizens can help create demand for environmentally 
-	friendly products and services. Additionally, citizens can support sustainable tourism by promoting eco-tourism and responsible travel practices.<br>
+          {/* --- CONTAINER 2 --- */}
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+              <span className="text-2xl">🚀</span>
+            </div>
+            <h2 className="text-xl font-bold text-gray-800 mb-2">Projects</h2>
+            <p className="text-gray-500 text-sm leading-relaxed">
+              Manage your active tasks, assign team members, and track deadlines.
+            </p>
+            <button className="mt-4 text-purple-600 font-semibold text-sm hover:text-purple-800">
+              Manage Tasks &rarr;
+            </button>
+          </div>
 
-In conclusion, the citizens of Dhaka have the potential to turn their city into a sustainable metropolis. By promoting sustainable transportation, 
-	waste management, green spaces, water management, and sustainable development, citizens can contribute to a cleaner, greener, and healthier 
-	future for themselves and future generations. It will require a collective effort from the government, businesses, and citizens to turn this 
-	vision into reality, but the benefits are worth the effort.</p>
+          {/* --- CONTAINER 3 --- */}
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+              <span className="text-2xl">⚙️</span>
+            </div>
+            <h2 className="text-xl font-bold text-gray-800 mb-2">Settings</h2>
+            <p className="text-gray-500 text-sm leading-relaxed">
+              Configure your account preferences, security settings, and notifications.
+            </p>
+            <button className="mt-4 text-emerald-600 font-semibold text-sm hover:text-emerald-800">
+              Configure &rarr;
+            </button>
+          </div>
 
-</div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-<div class="alert alert-success" data-aos="flip-up" role="alert">
-<h3>The Importance of Cybersecurity</h3>
-<p>
-	Cybersecurity's importance is on the rise. Fundamentally, our society is more technologically reliant than ever before and there is no sign that 
-	this trend will slow. Data leaks that could result in identity theft are now publicly posted on social media accounts. 
-	Sensitive information like social security numbers, credit card information and bank account details are now stored in cloud storage 
-	services like Dropbox or Google Drive.
-	The fact of the matter is whether you are an individual, small business or large multinational, you rely on computer systems every day. 
-	Pair this with the rise in cloud services, poor cloud service security, smartphones and the Internet of Things (IoT) and we have a myriad of 
-	cybersecurity threats that didn't exist a few decades ago. We need to understand the difference between cybersecurity and information 
-	security, even though the skillsets are becoming more similar.</p>
-<p>Source: https://www.upguard.com</p>
-</div>
-
-	<center>
-<h2>About us</h2>
-	</center>
+export default ThreeContainersLayout;
+// Descriptive responsive containers ends
+		<center>
+		<h2>About us</h2>
+		</center>
 <button class="accordion">Our Services</button>
 <div class="panel">
   <p>Web Development & Domain and Hosting Service</p>
@@ -171,51 +194,56 @@ In conclusion, the citizens of Dhaka have the potential to turn their city into 
 <p> Visual Effects: Creating visual effects for movies, TV shows, and advertisements is a service provided by animation agencies.</p>
 </div>
 
-<button class="accordion">Contact Us</button>
-<div class="panel">
-  <p>Shahnawaz Ayon</p>
-  <p>IT Support Specialist</p>
-  <p>Mobile: 01911780087</p>
-  <p>E-mail: ayon.webdev@gmail.com</p>
-</div>
+		<button class="accordion">Contact Us</button>
+		<div class="panel">
+		  <p>Shahnawaz Ayon</p>
+		  <p>Software Developer</p>
+		  <p>Mobile: 01911780087</p>
+		  <p>E-mail: coreteam.dt@gmail.com</p>
+		</div>
+		
+		<button class="accordion">Experiences</button>
 
-<button class="accordion">Experiences</button>
-<div class="panel">
-  <p>Cyber Security Course- Iowa State University of Science and Technology</p>
-  <p>Data Analysis with Python- University of Bristol</p>
-  <p>Network Security - Erasmus+, European Union</p>
-  <p>Advanced Training on Research Methodology</p>
-  <p>Artificial Intelligence & Machine Learning</p>
-  <p>Computer Networking Complete Course</p>
-  <p>Data structures and Algorithms</p>
-  <p>ReactJS Crash Course</p>
-  <p>Debian-based Linux distribution</p>
-  <p>Digital Forensics</p>
-  <p>Drone Programming with Python</p>
-  <p>JavaScript Essentials-</p>
-  <p>Machine Learning Algorithms for Problem Solving</p>
-  <p>Operating System for IT Support</p>
-  <p>Programming for Entrepreneurs</p>
-  <p>Project Management Professional Course</p>
-  <p>React.js Game Development</p>
-  <p>System Design</p>
-  <p>Climate Change and Green Infrastructure</p>
-  <p>Advanced course on Digital Marketingg</p>
-  <p>Advanced course on Graphics design and Animationg</p>
-</div>
+	// My courses section
 
-
-<button class="accordion">About Me</button>
-<div class="panel">
-  <h5 class="alert-heading">Experiences</h5>
-  <p>IT Support Specialist, The Innovation Lab</p>
 	
-  <p>Frontend Developer Intern, Aubichol Intelligent Technologies</p>
-  <p>Senior Content Developer, Russkin Bright Academy</p>
-  <p>Program Manager, Green Spark</p>
-  <p>Education Development Officer, Alokito Hridoy Foundation</p>
-  <p>Fellow, Teach for Bangladesh</p>
-  <p>Operations Officer, Nordicsoft Limited</p>
+		<div class="panel">
+		  <p>Cyber Security Course- Iowa State University of Science and Technology</p>
+		  <p>Data Analysis with Python- University of Bristol</p>
+		  <p>Network Security - Erasmus+, European Union</p>
+		  <p>Advanced Training on Research Methodology</p>
+		  <p>Artificial Intelligence & Machine Learning</p>
+		  <p>Computer Networking Complete Course</p>
+		  <p>Data structures and Algorithms</p>
+		  <p>ReactJS Crash Course</p>
+		  <p>Debian-based Linux distribution</p>
+		  <p>Digital Forensics</p>
+		  <p>Drone Programming with Python</p>
+		  <p>JavaScript Essentials-</p>
+		  <p>Machine Learning Algorithms for Problem Solving</p>
+		  <p>Operating System for IT Support</p>
+		  <p>Programming for Entrepreneurs</p>
+		  <p>Project Management Professional Course</p>
+		  <p>React.js Game Development</p>
+		  <p>System Design</p>
+		  <p>Climate Change and Green Infrastructure</p>
+		  <p>Advanced course on Digital Marketingg</p>
+		  <p>Advanced course on Graphics design and Animationg</p>
+		</div>
+
+//About me section
+	
+	<button class="accordion">About Me</button>
+<div class="panel">
+  		<h5 class="alert-heading">Experiences</h5>
+ 		<p>Trainer</p>
+  		<p> IDE CodeZen</p>
+	
+	  <p>Frontend Developer Intern, Aubichol Intelligent Technologies</p>
+	  <p>Program Manager, Green Spark</p>
+	  <p>Education Development Officer, Alokito Hridoy Foundation</p>
+	  <p>Fellow, Teach for Bangladesh</p>
+	  <p>Operations Officer, Nordicsoft Limited</p>
 </div>
 
 
@@ -504,4 +532,5 @@ for (i = 0; i < acc.length; i++) {
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   	
 </html>
+
 
